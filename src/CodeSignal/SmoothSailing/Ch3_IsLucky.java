@@ -1,4 +1,4 @@
-package SourceForge.SmoothSailing;
+package CodeSignal.SmoothSailing;
 
 
 public class Ch3_IsLucky {

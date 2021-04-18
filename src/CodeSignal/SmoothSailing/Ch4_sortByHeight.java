@@ -1,4 +1,4 @@
-package SourceForge.SmoothSailing;
+package CodeSignal.SmoothSailing;
 
 import java.util.HashSet;
 import java.util.LinkedList;

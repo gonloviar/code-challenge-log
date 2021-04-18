@@ -1,4 +1,4 @@
-package SourceForge.EdgeOfTheOcean;
+package CodeSignal.EdgeOfTheOcean;
 
 import java.util.HashSet;
 import java.util.Set;
