@@ -3,7 +3,7 @@ package CodeSignal.SmoothSailing;
 public class Ch5_ReverseInParenthesis {
 
 //    my solution using recursion... too long
-    String reverseInParentheses(String in){
+    String reverseInParentheses5(String in){
         return reverseFunction(in, true);
     }
 
@@ -66,10 +66,27 @@ public class Ch5_ReverseInParenthesis {
                 inputString.substring(end+1) );
     }
 
-
-
-
-
+    String reverseInParentheses(String inputString) {
+        if(inputString.isEmpty()){
+            return inputString;
+        }
+        if(!inputString.contains("(")){
+            return inputString;
+        }
+        String rStr=new String();
+        String str1=new String();
+        String str2=new String();
+        int n1 = inputString.lastIndexOf('(');
+        int n2=inputString.indexOf(')',n1);
+        str1=inputString.substring(0,n1);
+        str2=inputString.substring(n2+1);
+        rStr=inputString.substring(n1+1,n2);
+        StringBuilder input1 = new StringBuilder();
+        input1.append(rStr);
+        input1 = input1.reverse();
+        String r=str1+input1+str2;
+        return reverseInParentheses(r);
+    }
 
 
     public static void main(String[] args) {
