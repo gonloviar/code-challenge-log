@@ -1,4 +1,4 @@
-package CodeSignal.SmoothSailing;
+package codeSignal.intro._03_SmoothSailing;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package CodeSignal.SmoothSailing;
+package codeSignal.intro._03_SmoothSailing;
 
 
 public class Ch3_IsLucky {

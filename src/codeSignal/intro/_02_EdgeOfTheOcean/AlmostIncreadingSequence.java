@@ -1,4 +1,4 @@
-package CodeSignal.EdgeOfTheOcean;
+package codeSignal.intro._02_EdgeOfTheOcean;
 
 import java.util.ArrayList;
 

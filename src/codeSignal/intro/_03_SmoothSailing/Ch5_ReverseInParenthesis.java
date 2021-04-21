@@ -1,4 +1,4 @@
-package CodeSignal.SmoothSailing;
+package codeSignal.intro._03_SmoothSailing;
 
 public class Ch5_ReverseInParenthesis {
 
