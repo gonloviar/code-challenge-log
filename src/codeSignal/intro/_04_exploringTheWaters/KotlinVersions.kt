@@ -70,3 +70,22 @@ fun arrayChange2(inputArray: MutableList<Int>): Int = inputArray.indices.drop(1)
     }
 }.sum()
 
+//==============================================================================
+//====================   Ch17 palindromeRearranging   ===============================
+
+fun palindromeRearranging(inputString: String) =
+        inputString.toSet().filter { c -> inputString.count { it == c } % 2 == 1}.count() < 2
+
+fun palindromeRearranging2(inputString: String): Boolean {
+    var total = 0
+    val frequenciesByFirstChar = inputString.groupingBy { it }.eachCount()
+
+    frequenciesByFirstChar.forEach{
+        entry -> total += (entry.value % 2)
+    }
+
+    if(total<=1){
+        return true
+    }
+    return false
+}
