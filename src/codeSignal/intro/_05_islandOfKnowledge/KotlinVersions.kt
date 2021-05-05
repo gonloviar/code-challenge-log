@@ -41,3 +41,29 @@ fun isIPv4Address2(inputString: String): Boolean {
     }
     return true
 }
+
+
+//==============================================================================
+//====================   Ch22  =================================================
+
+fun avoidObstacles(inputArray: MutableList<Int>): Int =
+        (1..Int.MAX_VALUE).first { jump -> inputArray.all { it % jump != 0 } }
+
+
+fun avoidObstacles2(inputArray: MutableList<Int>): Int {
+    var sort = inputArray.sorted()
+    var jump = 0
+    var found = false
+    while(!found){
+        jump++
+        if(!sort.contains(jump)){
+            found = true
+            for(x in sort){
+                if(x.rem(jump) == 0){
+                    found = false
+                }
+            }
+        }
+    }
+    return jump
+}
